@@ -7,6 +7,8 @@ export default function Home() {
   async function redirectToOtherPage() {
     "use server";
     console.log('do somthing');
+
+    redirect("/other");
   }
   return <Form redirectToPage={redirectToOtherPage}></Form>
 }
